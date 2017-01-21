@@ -2,7 +2,11 @@ const http = new XMLHttpRequest();
 
 const btn = document.querySelector(".search__row2__btn");
 const content = document.querySelector(".results__content__column2__content");
-const title = document.querySelector(".title")
+const title = document.querySelector(".title");
+const lang = document.querySelector(".lang");
+const release = document.querySelector(".release");
+const actors = document.querySelector(".actors");
+const rating = document.querySelector(".rating");
 const moviefield = document.querySelector(".moviefield");
 const yearfield = document.querySelector(".yearfield");
 
@@ -32,10 +36,13 @@ const app = {
 	},
 	fetch: function(){
 		this.result = JSON.parse(http.response).results;
-		this.result.forEach(function(film){
-			console.log(film.original_title);
-			title.append(film.original_title);
-		})
+			console.log(this.result[0]);
+			// Seprat eine funktion noch schreiben bitte mein lieber Philipp du
+			title.textContent = this.result[0].original_title;
+			lang.textContent = this.result[0].original_language;
+			content.textContent = this.result[0].overview;
+			release.textContent = this.result[0].release_date;
+			rating.textContent = this.result[0].vote_average;
 
 	},
 	write: function(){
