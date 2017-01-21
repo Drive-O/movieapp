@@ -36,7 +36,10 @@ const app = {
 	},
 	fetch: function(){
 		this.result = JSON.parse(http.response).results;
-			console.log(this.result[0]);
+		this.titles = this.result.filter(function(film){
+				return film.original_title;
+			})
+		console.log(this.titles);
 			// Seprat eine funktion noch schreiben bitte mein lieber Philipp du
 			title.textContent = this.result[0].original_title;
 			lang.textContent = this.result[0].original_language;

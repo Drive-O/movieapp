@@ -461,9 +461,6 @@ template {
 }
 
 body{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -479,12 +476,11 @@ body{
 	display: flex;
 	-ms-flex-flow: column nowrap;
 	    flex-flow: column nowrap;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	/*justify-content: center;*/
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	width: 500px;
 }
 
 .search{
@@ -500,7 +496,7 @@ body{
 	background: #2980b9;
 	height: 120px;
 	margin: 0;
-	width: 550px
+	width: 500px
 }
 
 .search__row1 {
@@ -559,11 +555,8 @@ body{
 	display: flex;
 	-ms-flex-flow: column nowrap;
 	    flex-flow: column nowrap;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	width: 100%;
-	margin-top: 1.5rem
+	margin-top: 1.5rem;
+	width: 500px
 }
 
 .results__title {
