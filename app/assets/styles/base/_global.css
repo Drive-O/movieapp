@@ -5,4 +5,5 @@ body{
 	transform: translate(-50%, -50%);
 	font-family: 'Open Sans Condensed', sans-serif;
 	background: $darker-blue;
+	letter-spacing: 0.1rem;
 }

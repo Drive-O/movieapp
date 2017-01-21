@@ -2,19 +2,25 @@
 	display: flex;
 	flex-flow: column nowrap;
 	margin-top: 1.5rem;
-	width: 500px;
+	width: 100%;
+	border-left: 10px solid $bright-blue;
 
 	&__title{
 		width: 100%;
-		background: $bright-blue;
-		text-align: center;
+		background: $dark-blue;
 		color: #fff;
 		font-weight: 100;
 		font-size: 1.4rem;
+		
+		&__hl{
+			margin: 0;
+			font-weight: 100;
+			margin: 0.2rem;
+		}
 	}
 	&__content{
 		width: 100%;
-		background: $dark-blue;
+		background: #fff;
 		display: flex;
 		flex-flow: row nowrap;
 		align-items: flex-start;
