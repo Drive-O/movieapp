@@ -3,9 +3,39 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 	<title>MovieAPP</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
 </head>
 <body>
-	<h1>MovieAPP Startpages</h1>
+	<div class="container">
+		<div class="search">
+			<div class="search__row1">
+				<h4 class="search__row1__header">MovieDB APP</h4>
+			</div>
+			<div class="search__row2">
+				<input class="search__row2__field" type="text" name="title" placeholder="Movie">
+				<input class="search__row2__field" type="text" name="year" placeholder="Year" style="margin-left: 0.5rem;">
+				<input class="search__row2__btn" type="submit" name="submit" value="Send">
+			</div>
+		</div>
+		<div class="results">
+			<div class="results__title">Results</div>
+			<div class="results__content">
+				<div class="results__content__column1">
+					<ul>
+						<li>List-Item</li>
+						<li>List-Item</li>
+						<li>List-Item</li>
+						<li>List-Item</li>
+						<li>List-Item</li>
+					</ul>
+				</div>
+				<div class="results__content__column2">
+					<h5>Describtion</h5>
+					<p>Fülltext</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

@@ -1,0 +1,31 @@
+.results{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	width: 100%;
+	margin-top: 1.5rem;
+
+	&__title{
+		width: 100%;
+		background: $bright-blue;
+		text-align: center;
+		color: #fff;
+		font-weight: 100;
+		font-size: 1.8rem;
+	}
+	&__content{
+		width: 100%;
+		background: $dark-blue;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: center;
+
+		&__column1{
+			width: 50%;
+		}
+		&__column2{
+			width: 50%;
+		}
+	}
+}
