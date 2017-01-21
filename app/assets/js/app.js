@@ -26,10 +26,10 @@ const app = {
 		http.open(this.method, url);
 
 		http.onreadystatechange = function(){
-			if(http.readyState === XMLHttpRequest.DONE && http.status == "200"){
+			if(http.readyState === XMLHttpRequest.DONE && http.status == 200){ //fix
 				console.log("Success!");
 				app.fetch();
-			}else{
+			}else if(http.readyState === XMLHttpRequest.DONE && http.status !== 200){
 				console.log("Error: " + http.state);
 			}
 		}
